@@ -13,7 +13,7 @@ cols = st.sidebar.number_input("列数（左から右）", min_value=1, max_valu
 seat_positions = [(r, c) for r in range(rows) for c in range(cols)]
 
 # 2. CSVファイルのアップロード
-tudents = []
+students = []
 st.subheader("📄 生徒情報のCSVアップロード")
 uploaded_file = st.file_uploader("生徒情報CSVをアップロードしてください（出席番号, 性別, 配慮事項）", type="csv")
 
