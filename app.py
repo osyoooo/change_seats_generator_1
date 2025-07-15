@@ -117,7 +117,7 @@ for stu in students:
 seat_grid = [["　" for _ in range(cols)] for _ in range(rows)]
 for sid, (r, c) in assigned.items():
     gender = next(s["gender"] for s in students if s["id"] == sid)
-    icon = "👦" if gender == "M" else 👧"👧"
+    icon = "🧑‍🎓" if gender == "M" else "👩‍🎓"
     seat_grid[r][c] = f"{icon}{sid}"
 
 for row in seat_grid:
